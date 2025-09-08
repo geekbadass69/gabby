@@ -45,8 +45,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
+                  "maximumWarning": "10kB",
+                  "maximumError": "12kB"
                 }
               ],
               "outputHashing": "all"
@@ -89,8 +89,19 @@
               "src/styles.scss"
             ]
           }
+        },
+        "prerender": {
+          "builder": "@angular-devkit/build-angular:prerender",
+          "options": {
+            "browserTarget": "bodybyher:build:production",
+            "serverTarget": "bodybyher:build:production",
+            "routes": ["/", "/contact"]
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

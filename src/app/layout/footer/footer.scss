@@ -1,0 +1,91 @@
+.footer-container {
+  margin: 0;            /* Remove any default margin */
+  padding: 20px 0;      /* Keep padding for spacing, or set to 0 for no padding */
+  width: 100%;          /* Make sure it spans full width */
+  box-sizing: border-box; /* Include padding in width calculation */
+  background-color: #000000a1;
+  color: #fff;
+  text-align: center;
+  animation: slide-in-blurred-bottom 1.6s forwards;
+
+
+    // &::before {
+    // content: "";
+    // position: absolute;
+    // top: 0; left: 0; right: 0; bottom: 0;
+    // background-image: url('https://imagedelivery.net/9rZ-z0BGWBJ3AVm1zCQ9Fw/1358d6dd-b1fe-4509-ae6f-264786461600/public'); /* replace with your pattern */
+    // background-repeat: repeat;
+    // opacity: 0.2; /* adjust for subtlety */
+    // mix-blend-mode: soft-light; /* or soft-light for blending */
+    // pointer-events: none; /* so it doesn't interfere with clicks */
+    // z-index: 0; /* behind content */
+//   }
+
+  p {
+    margin: 50px 0;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: underline; // or remove underline if preferred
+  }
+}
+.footer-logo {
+  margin-bottom: 10px; /* space between logo and other footer content */
+}
+
+.footer-logo img {
+  width: 90px; /* set your desired size */
+  height: auto;
+    z-index: 25;
+}
+.dbtweblogo{
+    width: calc(200px - 50px);
+    height: auto;
+      z-index: 25;
+}
+/**
+ * ----------------------------------------
+ * animation slide-in-blurred-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-blurred-bottom {
+  0% {
+    -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-bottom {
+  0% {
+    -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}

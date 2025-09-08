@@ -1,0 +1,48 @@
+<header>
+  <button class="header-logo" routerLink="/" (click)="ChangeHomeTitle()">
+    <!-- <img src="https://imagedelivery.net/9rZ-z0BGWBJ3AVm1zCQ9Fw/48d47b5c-bcd2-4fe7-7ad1-c0e666986c00/public"  alt="Logo" /> -->
+  </button>
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler" #menuCheckbox>
+    <div class="hamburger">
+      <div></div>
+    </div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a [routerLink]="['/contact']" (click)="changeContactTitle(); closeMenu()">Menu item 1</a></li>
+            <li>Menu item 2</li>
+            <li>Menu item 3</li>
+            <li>Menu item 4</li>
+            <li>Menu item 5</li>
+            <li>Menu item 6</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="hamburger-menu" (click)="openOverlay()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+<div *ngIf="overlayVisible" 
+     class="overlay" 
+     [ngClass]="{
+       'fade-in': overlayFadeIn,
+       'fade-out': overlayFadeOut
+     }">
+  <div class="close-icon" (click)="closeOverlay()">✖</div> -->
+  <!-- Your overlay content -->
+
+  <!-- <ul>
+    <li><a [routerLink]="['/contact']" (click)="changeContactTitle()">Menu item 1</a></li>
+    <li>Menu item 2</li>
+    <li>Menu item 3</li>
+    <li>Menu item 4</li>
+    <li>Menu item 5</li>
+    <li>Menu item 6</li>
+  </ul>
+</div> -->
+</header>

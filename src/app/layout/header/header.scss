@@ -1,0 +1,39 @@
+
+.header-logo {
+  width: 120px; /* or your image width */
+  height: 120px; /* your image height */
+  //   width: 160px; /* decrease size as needed */
+  // width: calc(90px + 2vw);
+  padding: 10px; /* add padding around the logo */
+  display: inline-block; /* ensure inline behavior */ /* align with other header items if needed */
+  animation: text-focus-in 1.2s forwards;
+  opacity: 1; /* ensure fully visible */
+  visibility: visible; /* ensure visible */
+  z-index: 20;
+  background-image: url('https://imagedelivery.net/9rZ-z0BGWBJ3AVm1zCQ9Fw/48d47b5c-bcd2-4fe7-7ad1-c0e666986c00/public');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.logo-button {
+   all: unset;
+  width: 120px; /* or your image width */
+  height: 120px; /* your image height */
+  background-image: url('https://imagedelivery.net/9rZ-z0BGWBJ3AVm1zCQ9Fw/48d47b5c-bcd2-4fe7-7ad1-c0e666986c00/public');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  background-color: transparent; /* optional */
+}
+header {
+  // position: sticky;
+  // top: 0;
+  display: flex;
+  justify-content: space-between; /* space between logo/title and menu */
+  align-items: center;
+  padding: 10px 20px; /* adjust padding as needed */
+  z-index: 100;
+}

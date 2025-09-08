@@ -1,0 +1,9 @@
+<ng-container *ngIf="isShown" @fadeSlide>
+  <button
+    class="back-to-top"
+    (click)="scrollToTop()"
+    aria-label="Back to top"
+  >
+    <fa-icon [icon]="faArrowUp"></fa-icon>
+  </button>
+</ng-container>
