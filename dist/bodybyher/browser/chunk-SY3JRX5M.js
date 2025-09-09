@@ -1,0 +1,1 @@
+import{Pa as n,hb as o,ib as c,wb as a}from"./chunk-YKWOAENI.js";var i=class e{static \u0275fac=function(t){return new(t||e)};static \u0275cmp=n({type:e,selectors:[["app-contact"]],decls:2,vars:0,consts:[[1,"title",2,"color","white","text-align","center"]],template:function(t,r){t&1&&(o(0,"h1",0),a(1,"contact works!"),c())},encapsulation:2})};export{i as Contact};
